@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 34.467 s <<< FAILURE! - in TestSuite
+PageObjectTests.BasketTest.notAtomicityMethod[HP, 500000](1)  Time elapsed: 4.693 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'WOTTAKWOT', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6413f25f69fb399b47ec6379d0b3d150, clickElement {id=b876186f-c9f4-49eb-9e35-7425900d97cf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\vexli\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59448}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59448/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6413f25f69fb399b47ec6379d0b3d150)] -> xpath: //rz-catalog//div[@data-goods-id]]
+Session ID: 6413f25f69fb399b47ec6379d0b3d150
+	at PageObjectTests.BasketTest.notAtomicityMethod(BasketTest.java:26)
+
+PageObjectTests.BasketTest.notAtomicityMethod[Laptop, 1000000](1)  Time elapsed: 2.216 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'WOTTAKWOT', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ff6f7dfe657f5593f45ab3223e7ff14c, isElementDisplayed {id=f9b69302-8662-4795-873b-4074a5327c9c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\vexli\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59449}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59449/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ff6f7dfe657f5593f45ab3223e7ff14c)] -> xpath: //rz-catalog//div[@data-goods-id]]
+Session ID: ff6f7dfe657f5593f45ab3223e7ff14c
+	at PageObjectTests.BasketTest.notAtomicityMethod(BasketTest.java:26)
+

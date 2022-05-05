@@ -1,0 +1,145 @@
+2022-05-06 02:24:12 INFO  onStart method started 
+2022-05-06 02:24:12 INFO  onStart method started 
+2022-05-06 02:24:12 INFO  onStart method started 
+2022-05-06 02:24:12 INFO  This method is invoked before- setUp
+2022-05-06 02:24:12 INFO  This method is invoked before- setUp
+2022-05-06 02:24:12 INFO  This method is invoked before- setUp
+2022-05-06 02:24:13 INFO  Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-05-06 02:24:13 INFO  Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-05-06 02:24:13 INFO  Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-05-06 02:24:13 INFO  Exporting webdriver.chrome.driver as C:\Users\vexli\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-05-06 02:24:13 INFO  Exporting webdriver.chrome.driver as C:\Users\vexli\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-05-06 02:24:13 INFO  Exporting webdriver.chrome.driver as C:\Users\vexli\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-05-06 02:24:13 INFO  This method is invoked after- setUp
+2022-05-06 02:24:13 INFO  This method is invoked after- setUp
+2022-05-06 02:24:13 INFO  This method is invoked after- setUp
+2022-05-06 02:24:13 INFO  This method is invoked before- testsSetUp
+2022-05-06 02:24:13 INFO  This method is invoked before- testsSetUp
+2022-05-06 02:24:13 INFO  This method is invoked before- testsSetUp
+2022-05-06 02:24:17 INFO  This method is invoked after- testsSetUp
+2022-05-06 02:24:17 INFO  Method started notAtomicityMethod
+2022-05-06 02:24:17 INFO  This method is invoked before- notAtomicityMethod
+2022-05-06 02:24:19 INFO  This method is invoked after- testsSetUp
+2022-05-06 02:24:19 INFO  Method started notAtomicityMethod
+2022-05-06 02:24:19 INFO  This method is invoked before- notAtomicityMethod
+2022-05-06 02:24:19 INFO  This method is invoked after- testsSetUp
+2022-05-06 02:24:19 INFO  Method started notAtomicityMethod
+2022-05-06 02:24:19 INFO  This method is invoked before- notAtomicityMethod
+2022-05-06 02:24:27 INFO  This method is invoked after- notAtomicityMethod
+2022-05-06 02:24:27 INFO  Method failed notAtomicityMethod
+2022-05-06 02:24:27 INFO  This method is invoked before- tearDown
+2022-05-06 02:24:29 WARN  onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-05-06 02:24:29 INFO  This method is invoked after- notAtomicityMethod
+2022-05-06 02:24:29 INFO  Method failed notAtomicityMethod
+2022-05-06 02:24:29 INFO  This method is invoked before- tearDown
+2022-05-06 02:24:30 INFO  This method is invoked after- tearDown
+2022-05-06 02:24:30 INFO  This method is invoked before- getDriver
+2022-05-06 02:24:30 INFO  This method is invoked after- getDriver
+2022-05-06 02:24:30 INFO  onFinish method finished 
+2022-05-06 02:24:30 INFO  onStart method started 
+2022-05-06 02:24:30 INFO  This method is invoked before- setUp
+2022-05-06 02:24:30 INFO  Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-05-06 02:24:30 INFO  Exporting webdriver.chrome.driver as C:\Users\vexli\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-05-06 02:24:30 INFO  This method is invoked after- setUp
+2022-05-06 02:24:30 INFO  This method is invoked before- testsSetUp
+2022-05-06 02:24:30 INFO  This method is invoked after- tearDown
+2022-05-06 02:24:30 INFO  This method is invoked before- getDriver
+2022-05-06 02:24:30 INFO  This method is invoked after- getDriver
+2022-05-06 02:24:30 INFO  onFinish method finished 
+2022-05-06 02:24:30 INFO  onStart method started 
+2022-05-06 02:24:30 INFO  This method is invoked before- setUp
+2022-05-06 02:24:30 INFO  Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-05-06 02:24:30 INFO  Exporting webdriver.chrome.driver as C:\Users\vexli\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-05-06 02:24:30 INFO  This method is invoked after- setUp
+2022-05-06 02:24:30 INFO  This method is invoked before- testsSetUp
+2022-05-06 02:24:30 INFO  This method is invoked after- notAtomicityMethod
+2022-05-06 02:24:30 INFO  Method passed notAtomicityMethod
+2022-05-06 02:24:30 INFO  This method is invoked before- tearDown
+2022-05-06 02:24:31 WARN  onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-05-06 02:24:31 INFO  This method is invoked after- tearDown
+2022-05-06 02:24:31 INFO  This method is invoked before- getDriver
+2022-05-06 02:24:31 INFO  This method is invoked after- getDriver
+2022-05-06 02:24:31 INFO  onFinish method finished 
+2022-05-06 02:24:32 INFO  This method is invoked after- testsSetUp
+2022-05-06 02:24:32 INFO  Method started notAtomicityMethod
+2022-05-06 02:24:32 INFO  This method is invoked before- notAtomicityMethod
+2022-05-06 02:24:32 INFO  This method is invoked after- testsSetUp
+2022-05-06 02:24:32 INFO  Method started notAtomicityMethod
+2022-05-06 02:24:32 INFO  This method is invoked before- notAtomicityMethod
+2022-05-06 02:24:43 INFO  This method is invoked after- notAtomicityMethod
+2022-05-06 02:24:43 INFO  Method passed notAtomicityMethod
+2022-05-06 02:24:43 INFO  This method is invoked before- tearDown
+2022-05-06 02:24:43 WARN  onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-05-06 02:24:43 INFO  This method is invoked after- tearDown
+2022-05-06 02:24:43 INFO  This method is invoked before- getDriver
+2022-05-06 02:24:43 INFO  This method is invoked after- getDriver
+2022-05-06 02:24:43 INFO  onFinish method finished 
+2022-05-06 02:24:45 INFO  This method is invoked after- notAtomicityMethod
+2022-05-06 02:24:45 INFO  Method passed notAtomicityMethod
+2022-05-06 02:24:45 INFO  This method is invoked before- tearDown
+2022-05-06 02:24:45 WARN  onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.buffer.WrappedByteBuf.writeBytes(WrappedByteBuf.java:821)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-05-06 02:24:45 INFO  This method is invoked after- tearDown
+2022-05-06 02:24:45 INFO  This method is invoked before- getDriver
+2022-05-06 02:24:45 INFO  This method is invoked after- getDriver
+2022-05-06 02:24:45 INFO  onFinish method finished 

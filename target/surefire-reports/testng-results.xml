@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-05T18:01:03 EEST" name="Local" finished-at="2022-05-05T18:01:37 EEST" duration-ms="33973">
+    <groups>
+    </groups>
+    <test started-at="2022-05-05T18:01:03 EEST" name="BasketTest2" finished-at="2022-05-05T18:01:14 EEST" duration-ms="11197">
+      <class name="PageObjectTests.BasketTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:PageObjectTests.BasketTest@15bbf42f]" started-at="2022-05-05T18:01:03 EEST" name="setUp" finished-at="2022-05-05T18:01:03 EEST" duration-ms="331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="testsSetUp()[pri:0, instance:PageObjectTests.BasketTest@15bbf42f]" started-at="2022-05-05T18:01:03 EEST" name="testsSetUp" finished-at="2022-05-05T18:01:09 EEST" duration-ms="5923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsSetUp -->
+        <test-method signature="notAtomicityMethod(java.lang.String, java.lang.String)[pri:0, instance:PageObjectTests.BasketTest@15bbf42f]" started-at="2022-05-05T18:01:09 EEST" name="notAtomicityMethod" finished-at="2022-05-05T18:01:14 EEST" duration-ms="4686" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HP]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[500000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'WOTTAKWOT', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6413f25f69fb399b47ec6379d0b3d150, clickElement {id=b876186f-c9f4-49eb-9e35-7425900d97cf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\vexli\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59448}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59448/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6413f25f69fb399b47ec6379d0b3d150)] -> xpath: //rz-catalog//div[@data-goods-id]]
+Session ID: 6413f25f69fb399b47ec6379d0b3d150]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'WOTTAKWOT', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6413f25f69fb399b47ec6379d0b3d150, clickElement {id=b876186f-c9f4-49eb-9e35-7425900d97cf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\vexli\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59448}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59448/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6413f25f69fb399b47ec6379d0b3d150)] -> xpath: //rz-catalog//div[@data-goods-id]]
+Session ID: 6413f25f69fb399b47ec6379d0b3d150
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at PageObject.Page.firstElementClick(Page.java:44)
+at PageObjectTests.BasketTest.notAtomicityMethod(BasketTest.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notAtomicityMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:PageObjectTests.BasketTest@15bbf42f]" started-at="2022-05-05T18:01:14 EEST" name="tearDown" finished-at="2022-05-05T18:01:14 EEST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjectTests.BasketTest@15bbf42f]" started-at="2022-05-05T18:01:14 EEST" name="getDriver" finished-at="2022-05-05T18:01:14 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+      </class> <!-- PageObjectTests.BasketTest -->
+    </test> <!-- BasketTest2 -->
+    <test started-at="2022-05-05T18:01:03 EEST" name="BasketTest" finished-at="2022-05-05T18:01:20 EEST" duration-ms="16833">
+      <class name="PageObjectTests.BasketTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:PageObjectTests.BasketTest@e7edb54]" started-at="2022-05-05T18:01:03 EEST" name="setUp" finished-at="2022-05-05T18:01:03 EEST" duration-ms="331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="testsSetUp()[pri:0, instance:PageObjectTests.BasketTest@e7edb54]" started-at="2022-05-05T18:01:03 EEST" name="testsSetUp" finished-at="2022-05-05T18:01:09 EEST" duration-ms="5896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsSetUp -->
+        <test-method signature="notAtomicityMethod(java.lang.String, java.lang.String)[pri:0, instance:PageObjectTests.BasketTest@e7edb54]" started-at="2022-05-05T18:01:09 EEST" name="notAtomicityMethod" finished-at="2022-05-05T18:01:20 EEST" duration-ms="10320" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Laptop]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'WOTTAKWOT', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ff6f7dfe657f5593f45ab3223e7ff14c, isElementDisplayed {id=f9b69302-8662-4795-873b-4074a5327c9c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\vexli\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59449}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59449/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ff6f7dfe657f5593f45ab3223e7ff14c)] -> xpath: //rz-catalog//div[@data-goods-id]]
+Session ID: ff6f7dfe657f5593f45ab3223e7ff14c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'WOTTAKWOT', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ff6f7dfe657f5593f45ab3223e7ff14c, isElementDisplayed {id=f9b69302-8662-4795-873b-4074a5327c9c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\vexli\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59449}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59449/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ff6f7dfe657f5593f45ab3223e7ff14c)] -> xpath: //rz-catalog//div[@data-goods-id]]
+Session ID: ff6f7dfe657f5593f45ab3223e7ff14c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:307)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+at PageObject.BasePage.waitVisibilityOfElement(BasePage.java:44)
+at PageObject.Page.firstElementClick(Page.java:43)
+at PageObjectTests.BasketTest.notAtomicityMethod(BasketTest.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notAtomicityMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:PageObjectTests.BasketTest@e7edb54]" started-at="2022-05-05T18:01:20 EEST" name="tearDown" finished-at="2022-05-05T18:01:20 EEST" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjectTests.BasketTest@e7edb54]" started-at="2022-05-05T18:01:20 EEST" name="getDriver" finished-at="2022-05-05T18:01:20 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+      </class> <!-- PageObjectTests.BasketTest -->
+    </test> <!-- BasketTest -->
+    <test started-at="2022-05-05T18:01:14 EEST" name="BasketTest4" finished-at="2022-05-05T18:01:27 EEST" duration-ms="12645">
+      <class name="PageObjectTests.BasketTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:PageObjectTests.BasketTest@57af006c]" started-at="2022-05-05T18:01:14 EEST" name="setUp" finished-at="2022-05-05T18:01:14 EEST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="testsSetUp()[pri:0, instance:PageObjectTests.BasketTest@57af006c]" started-at="2022-05-05T18:01:14 EEST" name="testsSetUp" finished-at="2022-05-05T18:01:17 EEST" duration-ms="2764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsSetUp -->
+        <test-method signature="notAtomicityMethod(java.lang.String, java.lang.String)[pri:0, instance:PageObjectTests.BasketTest@57af006c]" started-at="2022-05-05T18:01:17 EEST" name="notAtomicityMethod" finished-at="2022-05-05T18:01:27 EEST" duration-ms="9733" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HP]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[500000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notAtomicityMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:PageObjectTests.BasketTest@57af006c]" started-at="2022-05-05T18:01:27 EEST" name="tearDown" finished-at="2022-05-05T18:01:27 EEST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjectTests.BasketTest@57af006c]" started-at="2022-05-05T18:01:27 EEST" name="getDriver" finished-at="2022-05-05T18:01:27 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+      </class> <!-- PageObjectTests.BasketTest -->
+    </test> <!-- BasketTest4 -->
+    <test started-at="2022-05-05T18:01:20 EEST" name="BasketTest5" finished-at="2022-05-05T18:01:35 EEST" duration-ms="15107">
+      <class name="PageObjectTests.BasketTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:PageObjectTests.BasketTest@3514a4c0]" started-at="2022-05-05T18:01:20 EEST" name="setUp" finished-at="2022-05-05T18:01:20 EEST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="testsSetUp()[pri:0, instance:PageObjectTests.BasketTest@3514a4c0]" started-at="2022-05-05T18:01:20 EEST" name="testsSetUp" finished-at="2022-05-05T18:01:22 EEST" duration-ms="2320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsSetUp -->
+        <test-method signature="notAtomicityMethod(java.lang.String, java.lang.String)[pri:0, instance:PageObjectTests.BasketTest@3514a4c0]" started-at="2022-05-05T18:01:22 EEST" name="notAtomicityMethod" finished-at="2022-05-05T18:01:35 EEST" duration-ms="12676" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HP]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[500000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notAtomicityMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:PageObjectTests.BasketTest@3514a4c0]" started-at="2022-05-05T18:01:35 EEST" name="tearDown" finished-at="2022-05-05T18:01:35 EEST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjectTests.BasketTest@3514a4c0]" started-at="2022-05-05T18:01:35 EEST" name="getDriver" finished-at="2022-05-05T18:01:35 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+      </class> <!-- PageObjectTests.BasketTest -->
+    </test> <!-- BasketTest5 -->
+    <test started-at="2022-05-05T18:01:03 EEST" name="BasketTest3" finished-at="2022-05-05T18:01:37 EEST" duration-ms="33972">
+      <class name="PageObjectTests.BasketTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:PageObjectTests.BasketTest@6c130c45]" started-at="2022-05-05T18:01:03 EEST" name="setUp" finished-at="2022-05-05T18:01:03 EEST" duration-ms="331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="testsSetUp()[pri:0, instance:PageObjectTests.BasketTest@6c130c45]" started-at="2022-05-05T18:01:03 EEST" name="testsSetUp" finished-at="2022-05-05T18:01:07 EEST" duration-ms="3882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsSetUp -->
+        <test-method signature="notAtomicityMethod(java.lang.String, java.lang.String)[pri:0, instance:PageObjectTests.BasketTest@6c130c45]" started-at="2022-05-05T18:01:07 EEST" name="notAtomicityMethod" finished-at="2022-05-05T18:01:37 EEST" duration-ms="29666" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HP]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[500000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notAtomicityMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:PageObjectTests.BasketTest@6c130c45]" started-at="2022-05-05T18:01:37 EEST" name="tearDown" finished-at="2022-05-05T18:01:37 EEST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:PageObjectTests.BasketTest@6c130c45]" started-at="2022-05-05T18:01:37 EEST" name="getDriver" finished-at="2022-05-05T18:01:37 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+      </class> <!-- PageObjectTests.BasketTest -->
+    </test> <!-- BasketTest3 -->
+  </suite> <!-- Local -->
+</testng-results>
