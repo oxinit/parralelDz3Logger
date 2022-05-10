@@ -1,16 +1,17 @@
-package PageObject;
+package Pages;
 
-import decorator.TextInput;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import static java.lang.Thread.sleep;
 
@@ -24,15 +25,19 @@ public class BasePage {
 
     public BasePage(WebDriver driver){
         driverFather =driver;
-        PageFactory.initElements(driverFather, this);//ініціалізує веб елементи по ікспасам кеп
+        PageFactory.initElements(driverFather,this);
     }
 
-    public void searchFieldSendKeys(String searchKey){
-        waitForPageLoading(30);
+    public void searchFieldSendKeys(String searchKey) {
+        waitForPageLoading(10);
         SearchField.sendKeys(searchKey);
+
     }
-    public void clickFindButton() {
+    public void clickFindButton() throws InterruptedException {
+        waitVisibilityOfElement(60,FindButton);
         FindButton.click();
+        waitForPageLoading(10);
+        Thread.sleep(600);
     }
 
     public void waitForPageLoading(long timeToWait){
@@ -44,7 +49,6 @@ public class BasePage {
         wait.until(ExpectedConditions.visibilityOf(locator));
     }
 
-    //ExpectedConditions.visibilityOfElementLocated(locator
     public void implicitWait1(long timeOut) throws InterruptedException {
         driverFather.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeOut));
         sleep(timeOut);
@@ -53,4 +57,11 @@ public class BasePage {
         new WebDriverWait(driverFather, Duration.ofSeconds(timeToWait)).until(
              webDriver -> ((JavascriptExecutor) webDriver).executeScript("return window.jQuery != undefined && jQuery.active == 0;"));
  }
+
+  //  FluentWait wait2 = new FluentWait(driverFather);
+   // wait2.
+    //wait2.pollingEvery(250, TimeUnit.MILLISECONDS);
+    //wait2.ignoring(NoSuchElementException.class);
+      //      wait2.until(ExpectedConditions.alertIsPresent());
+
 }

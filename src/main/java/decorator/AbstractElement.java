@@ -1,7 +1,9 @@
 package decorator;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.pagefactory.*;
 
+import java.lang.reflect.Field;
 import java.util.List;
 
 public class AbstractElement implements WebElement {
@@ -95,4 +97,28 @@ public class AbstractElement implements WebElement {
     public <X> X getScreenshotAs(OutputType<X> target) throws WebDriverException {
         return null;
     }
+
+    public static class FieldDecoratorEx extends DefaultFieldDecorator {
+    public FieldDecoratorEx(ElementLocatorFactory factory) {
+        super(factory);
+    }
+
+    @Override
+    public Object decorate(ClassLoader loader, Field field) {
+        if (field.getType().equals(CheckBox.class)) {
+            AjaxElementLocatorFactory factory = null;
+            ElementLocator locator = factory.createLocator(field);
+            if (locator == null)
+                return null;
+            return new CheckBox(proxyForLocator(loader, locator)) {
+            };
+        } else if (field.getType().equals(TextInput.class)) {
+            ElementLocator locator = factory.createLocator(field);
+            if (locator == null) return null;
+            return new Button(proxyForLocator(loader, locator)) {
+            };
+        }
+        return super.decorate(loader, field);
+    }
+}
 }

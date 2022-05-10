@@ -1,47 +1,55 @@
-package PageObject;
+package Pages;
+import decorator.Button;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Listeners;
 import util.CustomMethodInvokedListener;
+
+import java.util.List;
 
 @Listeners(CustomMethodInvokedListener.class)
 public class Page extends BasePage{
     @FindBy(xpath = "//button[contains(@class,'cookie')]")
     private WebElement AcceptCookieAndClose;
-    @FindBy(xpath = "//a[@data-id='HP']")
+    @FindBy(xpath = "//a[@data-id='HP']")///parent::li[contains(@class,"filter")]
     private WebElement hpCheckBoxClick;
     @FindBy(xpath = "//option[contains(text(),\"От дорогих\")]")
     private WebElement expensiveSort;
     @FindBy(xpath = "//rz-catalog//div[@data-goods-id]")
-    private WebElement firstElementOfQuery;
+    private List<WebElement> firstElementOfQuery;
     @FindBy(xpath = "//span[text()=' Купить ']/ancestor::button[@aria-label='Купить']/ancestor::li")
     private WebElement buyButton;
     @FindBy(xpath = "//div[@class='cart-receipt__sum-price']/span")
     private WebElement totalCartSum;
-    @FindBy(xpath = "//span[text()=' В корзине ']")
+    @FindBy(xpath = "//p[@data-testid='cost']"
+          //  "//span[text()=' В корзине ']"
+    )
     private WebElement BasketButton;
 
     public Page(WebDriver driver) {
         super(driver);
     }
-
-    public void hpCHeckBoxClick(){
+    public void hpCHeckBoxClick() throws InterruptedException {
+        Thread.sleep(500);
         waitForPageLoading(20);
         waitVisibilityOfElement(30,hpCheckBoxClick);
         hpCheckBoxClick.click();
     }
     public void expensiveSortClick(){
         waitForPageLoading(30);
+        waitVisibilityOfElement(30,expensiveSort);
        expensiveSort.click();
     }
 
     public void firstElementClick() throws InterruptedException {
+        Thread.sleep(500);
         waitForPageLoading(20);
-        waitVisibilityOfElement(60,firstElementOfQuery);
-        firstElementOfQuery.click();
+       waitVisibilityOfElement(60,firstElementOfQuery.get(1));
+        firstElementOfQuery.get(1).click();
     }
 
     public void buyClick(){
@@ -57,7 +65,7 @@ public class Page extends BasePage{
     }
 
     public String checkSumOfGoods(){
-        waitVisibilityOfElement(60,totalCartSum);
+       waitVisibilityOfElement(60,totalCartSum);
        return totalCartSum.getText();
     }
 }

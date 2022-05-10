@@ -11,12 +11,12 @@ public class OptionsManager {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("-incognito");
         chromeOptions.addArguments("--ignore-certificate-errors");
-        chromeOptions.addArguments("--disable-popup-blocking");
+      //  chromeOptions.addArguments("--disable-popup-blocking");
         chromeOptions.addArguments("--disable-notifications");
         return chromeOptions;
     }
 
-    public static FirefoxOptions getFirefoxOptions() {
+   /* public static FirefoxOptions getFirefoxOptions() {
 
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         FirefoxProfile profile = new FirefoxProfile();
@@ -26,5 +26,7 @@ public class OptionsManager {
         firefoxOptions.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
         return firefoxOptions;
     }
+
+    */
 }
 

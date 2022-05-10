@@ -1,41 +1,33 @@
 package PageObjectTests;
 
-import PageObject.Page;
-import decorator.AbstractElement;
+import Pages.Page;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.*;
+import util.CustomTestListener;
+import util.DriverManager;
 import util.PropertiesReader;
-import util.WebDriverSingleton;
-import static io.github.bonigarcia.wdm.WebDriverManager.chromedriver;
 
+import static io.github.bonigarcia.wdm.WebDriverManager.getInstance;
+@Listeners(CustomTestListener.class)
 public class BaseTest {
     WebDriver driver1;
-    String url = new PropertiesReader().getUrl();
-   // WebDriver driver1= WebDriverSingleton.getInstance();
-
-
-    @BeforeTest
-               public void setUp(){chromedriver().setup();}
-    @BeforeMethod
+    private static final String URL = new PropertiesReader().getUrl();
+  //  @BeforeMethod
     public void testsSetUp(){
-        driver1=new ChromeDriver();
-         driver1.manage().window().maximize();
-        driver1.get(url);
+    driver1 = DriverManager.getDriver();
+    driver1.manage().window().maximize();
+    driver1.get(URL);
     }
-    @AfterMethod
-    public void tearDown(){
+
+    //@AfterMethod
+    public void close(){
         driver1.close();
+        driver1.quit();
+        DriverManager.terminate();
     }
-    @AfterClass
-    public WebDriver getDriver(){
-        return driver1;
-    }
-    public Page getPage(){
-        return new Page(getDriver());
-    }
+
+    public WebDriver getDriver(){return driver1;}
+    public Page getPage(){return new Page(getDriver());}
 
 }
