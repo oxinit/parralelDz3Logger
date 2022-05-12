@@ -1,0 +1,14 @@
+
+P
+java:S1118":Add a private constructor to hide the implicit public one.(øÅÖõ
+[
+java:S1128"@Remove this unused import 'org.testng.annotations.BeforeMethod'.(‹åóùùÿÿÿÿ
+W
+java:S1128"<Remove this unused import 'org.testng.annotations.Optional'.(ÑÙ’±ùÿÿÿÿ
+Y
+java:S1128">Remove this unused import 'org.testng.annotations.Parameters'.(Ôí€¬ùÿÿÿÿ
+Q
+java:S1128
+";Remove this unused import 'java.net.MalformedURLException'.(ªËŞˆ
+D
+java:S1128")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ

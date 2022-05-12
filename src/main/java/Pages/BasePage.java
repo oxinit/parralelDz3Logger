@@ -1,11 +1,16 @@
 package Pages;
 
+import decorator.AbstractElement;
+import decorator.Button;
+import decorator.FieldDecoratorEx;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory;
+import org.openqa.selenium.support.pagefactory.DefaultFieldDecorator;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -26,6 +31,9 @@ public class BasePage {
     public BasePage(WebDriver driver){
         driverFather =driver;
         PageFactory.initElements(driverFather,this);
+       // SelectPage page = new SelectPage();
+        //mertve
+        //PageFactory.initElements(new FieldDecoratorEx(new DefaultElementLocatorFactory(driverFather)), this);
     }
 
     public void searchFieldSendKeys(String searchKey) {

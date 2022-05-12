@@ -17,11 +17,10 @@ public class XMLStream {
 
         Object[][] searchFilterArray =
                 searchFilters.getSearchFilterList()
-                .stream().map(
-                x-> new Object[]{
-                        x.getProduct(),x.getBrandCheckBox(),x.getMaxSum()
+                        .stream().map(
+                                x-> new Object[]{
+                                          x.getProduct(),x.getBrandCheckBox(),x.getMaxSum()
                 }).toArray(Object[][]::new);
         return searchFilterArray;
     }
-
 }

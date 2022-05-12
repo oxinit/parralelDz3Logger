@@ -8,6 +8,10 @@ public class Button extends AbstractElement {
     public Button(WebElement webEle) {
         super(webEle);
     }
+    @Override
+    public void click(){
+        webEle.click();
+    }
     public void safeClick(){
         try{
             super.click();

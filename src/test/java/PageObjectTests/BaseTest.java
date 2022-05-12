@@ -1,7 +1,11 @@
 package PageObjectTests;
 
 import Pages.Page;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import manager.PageFactoryManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.*;
 import util.CustomTestListener;
@@ -11,23 +15,16 @@ import util.PropertiesReader;
 import static io.github.bonigarcia.wdm.WebDriverManager.getInstance;
 @Listeners(CustomTestListener.class)
 public class BaseTest {
-    WebDriver driver1;
-    private static final String URL = new PropertiesReader().getUrl();
-  //  @BeforeMethod
+    @BeforeMethod
     public void testsSetUp(){
-    driver1 = DriverManager.getDriver();
-    driver1.manage().window().maximize();
-    driver1.get(URL);
+        DriverManager.setDriverThread();
     }
-
-    //@AfterMethod
+    @AfterMethod
     public void close(){
-        driver1.close();
-        driver1.quit();
-        DriverManager.terminate();
+     DriverManager.getDriver().close();
     }
-
-    public WebDriver getDriver(){return driver1;}
-    public Page getPage(){return new Page(getDriver());}
-
+@AfterClass
+    public void terminate(){
+    DriverManager.terminate();
+    }
 }

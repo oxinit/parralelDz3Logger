@@ -13,19 +13,19 @@ import java.net.URL;
 public class DriverManager {
 
     protected static ThreadLocal<RemoteWebDriver> driverThread = new ThreadLocal<>();
-
+    private static final String URL = new PropertiesReader().getUrl();
     public static WebDriver getDriver() {
-        if (driverThread.get() != null) {
             return driverThread.get();
-        } else {
-            WebDriverManager.chromedriver().setup();
-            driverThread.set(new ChromeDriver());
-        //    OptionsManager.getChromeOptions()
         }
-        return driverThread.get();
-    }
 
-   public static void terminate() {
+public static void setDriverThread(){
+    WebDriverManager.chromedriver().setup();
+        driverThread.set(new ChromeDriver());
+    DriverManager.getDriver().manage().window().maximize();
+    DriverManager.getDriver().get(URL);
+}
+
+    public static void terminate() {
         driverThread.remove(); }
 }
 

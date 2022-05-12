@@ -14,6 +14,6 @@ public class PageFactoryManager {
     public Page getHomePage() {
         return new Page(driver);
     }
-
+    // add more pages dto?
 
 }
