@@ -1,8 +1,0 @@
-
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(š¢òC
-y	java:S116"_Rename this field "AcceptCookieAndClose" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊöŒÁþÿÿÿÿ
-l	java:S116"WRename this field "BasketButton" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘’³Ô
-J
-java:S1128"-Remove this unused import 'decorator.Button'.(ÖŸÆ¸8Í¯ê¸Š0
-f
-java:S1128"DRemove this unused import 'org.openqa.selenium.support.PageFactory'.(çžáëþÿÿÿÿ8Í¯ê¸Š0

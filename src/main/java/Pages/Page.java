@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Listeners;
 import util.CustomMethodInvokedListener;
 
@@ -14,11 +13,11 @@ import java.util.List;
 @Listeners(CustomMethodInvokedListener.class)
 public class Page extends BasePage{
     @FindBy(xpath = "//button[contains(@class,'cookie')]")
-    private WebElement AcceptCookieAndClose;
+    private Button AcceptCookieAndClose;
     @FindBy(xpath = "//a[@data-id='HP']")///parent::li[contains(@class,"filter")]
-    private WebElement hpCheckBoxClick;
+    private Button hpCheckBoxClick;
     @FindBy(xpath = "//option[contains(text(),\"От дорогих\")]")
-    private WebElement expensiveSort;
+    private Button expensiveSort;
     @FindBy(xpath = "//rz-catalog//div[@data-goods-id]")
     private List<WebElement> firstElementOfQuery;
     @FindBy(xpath = "//span[text()=' Купить ']/ancestor::button[@aria-label='Купить']/ancestor::li")
@@ -36,13 +35,13 @@ public class Page extends BasePage{
     public void hpCHeckBoxClick() throws InterruptedException {
         Thread.sleep(500);
         waitForPageLoading(20);
-        waitVisibilityOfElement(30,hpCheckBoxClick);
-        hpCheckBoxClick.click();
+       // waitVisibilityOfElement(30,hpCheckBoxClick);
+        hpCheckBoxClick.safeClick();
     }
     public void expensiveSortClick(){
         waitForPageLoading(30);
-        waitVisibilityOfElement(30,expensiveSort);
-       expensiveSort.click();
+        //waitVisibilityOfElement(30,expensiveSort);
+       expensiveSort.safeClick();
     }
 
     public void firstElementClick() throws InterruptedException {

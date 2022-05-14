@@ -17,7 +17,6 @@ public class CustomMethodInvokedListener implements IInvokedMethodListener {
    // @Override
    // public void beforeInvocation(IInvokedMethod method, ITestResult result) {
      //   logger.info("This method is invoked before- " + method.getTestMethod().getMethodName());
-
     //}
 
 }

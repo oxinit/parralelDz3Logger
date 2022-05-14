@@ -13,17 +13,18 @@ import java.lang.reflect.Field;
 
     @Override
     public Object decorate(ClassLoader loader, Field field) {
-        if (field.getType().equals(CheckBox.class)) {
+        if /*(field.getType().equals(CheckBox.class)) {
             AjaxElementLocatorFactory factory = null;
             ElementLocator locator = factory.createLocator(field);
             if (locator == null)
                 return null;
             return new CheckBox(proxyForLocator(loader, locator)) {
             };
-        } else if (field.getType().equals(TextInput.class)) {
+        } else if */
+        (field.getType().equals(Button.class)) {
             ElementLocator locator = factory.createLocator(field);
             if (locator == null) return null;
-            return new Button(proxyForLocator(loader, locator)) {
+                return new Button(proxyForLocator(loader, locator)) {
             };
         }
         return super.decorate(loader, field);

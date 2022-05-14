@@ -1,22 +1,0 @@
-
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(š¢òC
-k	java:S116"VRename this field "SearchField" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ý‚”¯
-j	java:S116"URename this field "FindButton" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ÈË¾
-]	java:S125""<This block of commented-out lines of code should be removed.(‹Éˆ„øÿÿÿÿ8Í’•±‹0
-V	java:S125E"<This block of commented-out lines of code should be removed.(¬¤©ýúÿÿÿÿ
-S
-java:S1128"6Remove this unused import 'decorator.AbstractElement'.(Þ˜‹»8×¶…±‹0
-J
-java:S1128"-Remove this unused import 'decorator.Button'.(ÖŸÆ¸8½–±‹0
-S
-java:S1128"7Remove this unused import 'decorator.FieldDecoratorEx'.(§»ÕT8Øµ•±‹0
-d
-java:S1128"GRemove this unused import 'org.openqa.selenium.NoSuchElementException'.(“®ü‰8×¶…±‹0
-~
-java:S1128"aRemove this unused import 'org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory'.(ŠÓƒµ8Øµ•±‹0
-|
-java:S1128"ZRemove this unused import 'org.openqa.selenium.support.pagefactory.DefaultFieldDecorator'.(à¢Œçúÿÿÿÿ8×¶…±‹0
-c
-java:S1128"FRemove this unused import 'org.openqa.selenium.support.ui.FluentWait'.(Æ÷·Ü8×¶…±‹0
-W
-java:S1128":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™þ8×¶…±‹0
